@@ -1,6 +1,7 @@
 class Api::SessionsController < ApplicationController
     include UserModule
     
+    #This would be a 'login' method
     def create_session
         @user = User.find_by(username: session_params[:username])
 
