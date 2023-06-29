@@ -8,7 +8,8 @@ class Api::UsersPokemonController < ApplicationController
         @pokemon = pokemon_service.fetch_pokemon_by_name(params[:name])
 
         if @pokemon
-            render json: @pokemon, status: :ok
+            render json: { pokemon: @pokemon }, status: :ok
+        
         else
              render json: { error: @pokemon[:message] }, status: :unprocessable_entity
         end
