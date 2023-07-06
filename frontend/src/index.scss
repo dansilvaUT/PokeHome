@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: "Advent Pro", sans-serif;
+}
+
+$grey: #4d5061;
+$electric: #f7f754;
+$grass: #2bcf57;
+$water: #1519d6;
+$ice: #25d2f5;
+$fire: #f57825;
+$flying: #e8ebed;
+$psychic: #7b4bbf;
+$rock: #73573e;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $grey;
+}
